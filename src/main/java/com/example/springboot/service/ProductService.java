@@ -95,6 +95,3 @@ public class ProductService {
             return Optional.of(responseProductRecordDto);
         }
 }
-git config --global user.name "Eduardo"
-
-git config --global user.email "eduardosilvamacedo96@gmail.com"

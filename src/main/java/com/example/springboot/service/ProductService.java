@@ -33,7 +33,7 @@ public class ProductService {
 
         public List<ProductModel> allProduct(){
             List<ProductModel> productList = productRepository.findAll();
-            
+
             if(!productList.isEmpty()){
                 for(ProductModel product: productList){
                     product.add(linkTo(methodOn(ProductController.class).getOneProduct(product.getIdProduct())).withSelfRel());
@@ -95,3 +95,6 @@ public class ProductService {
             return Optional.of(responseProductRecordDto);
         }
 }
+git config --global user.name "Eduardo"
+
+git config --global user.email "eduardosilvamacedo96@gmail.com"
